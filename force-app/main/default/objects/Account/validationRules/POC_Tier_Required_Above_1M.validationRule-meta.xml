@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POC_Tier_Required_Above_1M</fullName>
+    <active>true</active>
+    <description>Blocks saving an Account with Annual Revenue above 1,000,000 when Account Tier is blank.</description>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(AnnualRevenue)),
+    AnnualRevenue &gt; 1000000,
+    ISPICKVAL(POC_Tier__c, &quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>POC_Tier__c</errorDisplayField>
+    <errorMessage>Select a Tier for accounts above 1,000,000 revenue.</errorMessage>
+</ValidationRule>
