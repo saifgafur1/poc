@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>POC Bundle Pricing Admin</label>
+    <hasActivationRequired>false</hasActivationRequired>
     <description>Lets pricing administrators flag products as bundle-eligible (Product2.POC_Bundle_Eligible__c) and maintain POC Bundle Discount Band records.</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>Product2.POC_Bundle_Eligible__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <hasActivationRequired>false</hasActivationRequired>
-    <label>POC Bundle Pricing Admin</label>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
