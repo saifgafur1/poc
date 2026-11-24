@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>POC_Bundle_Eligible__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flags a product as eligible for the bundle discount so pricing can count it toward the 3-product threshold.</description>
+    <inlineHelpText>Check to include this product in the 10% bundle discount (3 or more eligible products on a quote).</inlineHelpText>
+    <label>Bundle Eligible</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>
